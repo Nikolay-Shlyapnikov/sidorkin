@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<div class="container">
+		<div class="wrapper">
+			<textarea name="" id="" class="textarea" placeholder="Переписка">
+</textarea>
+<div class="input__wrapper">
+	<p>Имя пользователя:</p>
+	<input type="text" class="input user" name="" id="" value="Николай" placeholder="Пользователь">
+</div>
+<div class="input__wrapper">
+	<p>Имя потенциального мошенника:</p>
+	<input type="text" class="input scammer" name="" id="" value="Олег" placeholder="Потеницальный мошенник">
+
+</div>
+			<button class="button">Проверить</button>
+		</div>
+		<div class="message__list">
+
+		</div>
+		<div class="window">
+			<div class="window__inner">
+				<div class="window__text"></div>
+				<div class="window__cross"></div>
+			</div>
+		</div>
+	</div>
+	<template id="message__template">
+		<div class="message__item">
+			<div class="message__author"></div>
+			<div class="message__text"></div>
+			<div class="message__time"></div>
+			<div class="information"></div>
+		</div>
+	</template>
+	<script src="script.js"></script>
+
+</body>
+
+</html>
