@@ -129,7 +129,7 @@ function parseMessages(chat, userName, scammerName) {
 	while (i < lines.length) {
 		if (lines[i] === userName || lines[i] === scammerName) {
 			author = lines[i];
-			time = lines[i + 1].match(timeRegEx)[0];
+			time = lines[i + 1].match(timeRegEx);
 			i = i + 2
 			continue
 		}
